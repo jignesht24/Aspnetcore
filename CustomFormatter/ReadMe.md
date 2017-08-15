@@ -1,4 +1,4 @@
-Introduction
+# Introduction
  
 Model binding in MVC maps HTTP request data to the parameters of the Controller's action method. The parameter may either be of simple type like integers, strings, double etc. or complex types. MVC binds the request data to the action parameter by parameter name.
  
@@ -21,7 +21,7 @@ namespace ModelBinder.ModelBinder
     }  
 }
 
-Example
+# Example
  
 In this example, we will implement a custom model binder that convert incoming request data (that passed as query string) to user define class. The request data contain all model properties with pipe (|) separator and our custom model binder will separate the data and assign them to model property.
  
@@ -60,7 +60,7 @@ namespace ModelBinder
     }  
 }
 
-Once the model is created from the request data, we need to assign this model to Result property of binding context using ModelBindingResult.Success method. This method representing a successful model binding operation. Same as Success Method, It has also method name ìFailedî it represent a fail model binding operation.
+Once the model is created from the request data, we need to assign this model to Result property of binding context using ModelBindingResult.Success method. This method representing a successful model binding operation. Same as Success Method, It has also method name ‚ÄúFailed‚Äù it represent a fail model binding operation.
  
 Now, the next step is to register Model binder. We have two ways to register Model binder:
 Using ModelBinder attribute
@@ -69,7 +69,7 @@ Register custom model binder using ModelBinder Attribute
  
 We can apply custom model binder using ModelBinder attribute by defining attribute on action method or model. If we are using this method (applying attribute on action method), we need to define this attribute on every action methods those want use this custom binding. We can also apply this attribute on model it-self.
  
-Applying ModelBinder Attribute on Model
+# Applying ModelBinder Attribute on Model
 
 namespace ModelBinder.Model  
 {  
@@ -84,7 +84,7 @@ namespace ModelBinder.Model
     }  
 } 
 
-Applying ModelBinding Attribute on Action method
+# Applying ModelBinding Attribute on Action method
 
 [HttpGet]  
 [Route("test")]  
@@ -94,11 +94,11 @@ public IActionResult Index([ModelBinder(BinderType = typeof(CustomModelBinder))]
     return View();  
 } 
 
-Register custom Model binder in startup class
+# Register custom Model binder in startup class
  
 We can also register our custom model binder in startup class that available for all s action methods. To register custom model binder, we need to create binder provider. The model binder provider class implement IModelBinderProvider interface. The all built-in model binders have their own model binder providers. We can also specify the type of argument model binder produces, not the input of our model binder. In following example, provider is only work with "CustomModelBinder".
  
-Custom Model binder provider
+# Custom Model binder provider
 
 namespace ModelBinder  
 {  
@@ -129,7 +129,7 @@ public void ConfigureServices(IServiceCollection services)
 
 In the above example, we are reading the required data from request (query string). Same as we can also read the data from request body. With the post method, we need to post the data within request body. In the following example, I have read the request body data and converted it in to required form.
  
-Model Binder
+# Model Binder
 namespace ModelBinder  
 {  
     using Microsoft.AspNetCore.Mvc.ModelBinding;  
@@ -176,6 +176,6 @@ namespace ModelBinder
     }  
 } 
 
-Summary
+# Summary
 
 ASP.NET Core has many built-in model binders and their providers that meet our most all needs. But custom model binder provides a way to bind our data which is in specific format to our model classes or action parameter.
