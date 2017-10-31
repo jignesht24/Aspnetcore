@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "City List";
+}
+
+@inject DIinView.Models.CityModelService cityService
+
+<h3>My nearest City List</h3>
+<ul>
+    @foreach (var name in cityService.GetCities())
+    {
+        <li>@name</li>
+    }
+</ul>
