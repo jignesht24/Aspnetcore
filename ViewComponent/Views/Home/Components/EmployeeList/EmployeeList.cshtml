@@ -1,0 +1,9 @@
+@model IEnumerable<testCore.Employee>
+
+<h3>Employee List</h3>
+<ul>
+    @foreach (var emp in Model)
+    {
+        <li>@emp.Name</li>
+    }
+</ul>

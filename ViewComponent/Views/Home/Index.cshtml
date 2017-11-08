@@ -1,0 +1,7 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    @await Component.InvokeAsync("EmployeeList", new { noOfEmployee = 5 })
+</div>
