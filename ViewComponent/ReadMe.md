@@ -19,10 +19,14 @@ Same as Controller class, View Component class must be non-abstract, public and 
 The view component defines logic in InvokeAsync method which returns IViewComponentResult. Required parameters directly comes from invocation of the view component. It never handles a request directly. The view component initialized model and passes to the view using "View" method. They are not directly reachable as a HTTP end point. They must invoked from the code.
 
 Example of ViewComponent class
+
 namespace testCore
 {
+
     using System.Collections.Generic;
+    
     using System.Threading.Tasks;
+    
     using Microsoft.AspNetCore.Mvc;
     
     public class EmployeeList : ViewComponent
@@ -54,7 +58,7 @@ Same as controller class, view component searches for the view runtime in follow
 
 The default view name is "Default" for the view component. It means that our view name must be "Default.cshtml". We can assigned different name to view of view component and this name must be pass to view method.
 
-How to invoke View Component from View
+# How to invoke View Component from View
 The InvokeAsync method used to invoke view component. This method accept two parameter: name of the view component and parameter. The parameter anonymous type.
 
 Syntax
@@ -63,7 +67,7 @@ Syntax
 Example
 @await Component.InvokeAsync("EmployeeList", new {  noOfEmployee = 4  })
 
-Invoking a view component in View as a Tag Helper
+# Invoking a view component in View as a Tag Helper
 Tag Helper is introduced in asp.net core 1.1 and higher. For tag helper, Pascal cased class and method parameter are translated in to lower kebab case. We have to use "vc" element (<vc></vc>) to invoke view component as a tag helper. It can be specify as following
 
 <vc:[view component name]  parameter1="value"
@@ -80,7 +84,7 @@ We must register the assembly that contain the view component using @addTagHelpe
 
 @addTagHelper *, ViewComponent
 
-Invoking a view component from a Controller class
+# Invoking a view component from a Controller class
 Mostly, view component are invoked from a view, but we can also invoke them from the controller method. View component do not have endpoint as controller class, so we can implement controller action that returns ViewComponentResult.
 
 Example
@@ -89,7 +93,7 @@ public IActionResult Index3()
     return ViewComponent("EmployeeList", new { noOfEmployee = 3});
 }
 
-Specifying a view name in ViewComponent
+# Specifying a view name in ViewComponent
 The complex view component might require to return non default view based on some condition. In the following example, ViewComponent will return EmployeeList view if paramter noOfEmployee value is greater than 5.
 
 public async Task<IViewComponentResult> InvokeAsync(int noOfEmployee)
