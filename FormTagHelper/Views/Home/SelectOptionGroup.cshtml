@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "SelectOptionGroup";
+}
+<div style="padding-top:70px;"></div>
+
+@model FormTagHelper.Models.CityViewModel
+
+<select asp-for="City" asp-items="Model.CityList"></select>
+
+

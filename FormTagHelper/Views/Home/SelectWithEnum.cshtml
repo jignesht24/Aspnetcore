@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewData["Title"] = "SelectWithEnum";
+}
+<div style="padding-top:70px;"></div>
+@model FormTagHelper.Models.CityEnumViewModel
+
+<select asp-for="EnumCity" asp-items="Html.GetEnumSelectList<CityEnum>()">
+</select> 
+
