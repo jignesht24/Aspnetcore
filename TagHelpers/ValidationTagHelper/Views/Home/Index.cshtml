@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model ValidationTagHelper.Models.UserViewModel
+<div style="padding-top:70px;"></div>
+<div class="row">
+    <form asp-controller="Home" asp-action="Save" method="post">
+        Email Address: <input asp-for="Email" /><br />
+        <span asp-validation-for="Email"></span><br />
+        <br />
+        <button type="submit" >Test Validation</button>
+    </form>
+</div>
+

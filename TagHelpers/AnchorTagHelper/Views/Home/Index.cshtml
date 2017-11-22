@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model AnchorTagHelper.Models.UserViewModel
+<div style="padding-top:70px;"></div>
+<div class="row">
+    <a asp-controller="Home" asp-action="Index">All Users</a><br />
+    <a asp-controller="Home1" asp-action="Index1">Users</a><br />
+
+    Example : asp-route-{value}  <br />
+    <a asp-controller="Home1" asp-action="Detail" asp-route-id="12">User Data</a><br />
+    <a asp-controller="Home1" asp-action="Detail" asp-route-userid="12">User Data1</a><br />
+
+    Example: asp-all-route-data  <br />
+
+    @{
+        var data =
+            new Dictionary<string, string>
+            {
+                {"Id", "11"},
+                {"name", "Rakesh"}
+            };
+    }
+    <a asp-route="userCurrent" asp-all-route-data="data">User Info</a><br />
+
+    Example: asp-fragment  <br />
+    <a asp-controller="Home1" asp-action="User" asp-fragment="#UserInfo">About User Information</a><br />
+
+    Example: asp-area  <br />
+    <a asp-action="User" asp-controller="Home1" asp-area="UserArea">Area Example</a> <br />
+
+    Example: asp-protocol  <br />
+    <a asp-action="User" asp-controller="Home1" asp-protocol="https">Protocol Example</a> <br />
+</div>

@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@model FormTagHelper.Models.UserViewModel
+<div style="padding-top:70px;"></div>
+<div class="row">
+
+    <form asp-controller="Home" asp-action="Save" method="post">
+        <!-- Input and Submit elements -->
+        UserId : <input asp-for="UserId" /><br />
+        User Name:<input asp-for="UserName" /><br />
+        Email Address: <input asp-for="EmailAdress" /><br />
+        Address : <textarea asp-for="Address"></textarea>
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" /> <br />
+    </form>
+</div>
+

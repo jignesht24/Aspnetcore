@@ -1,0 +1,9 @@
+﻿
+@{
+    ViewData["Title"] = "Select Example";
+}
+<div style="padding-top:70px;"></div>
+
+@model FormTagHelper.Models.FruitViewModel
+
+<select asp-for="Fruit" asp-items="Model.Fruits"></select>
