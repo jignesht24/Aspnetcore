@@ -100,10 +100,10 @@ Final step is to run the Unit test. Using following command, we can run our all 
 >dotnet test
 ```
 Result
-5.png
+![alt text](ScreenShots/5.PNG "")
 
 We also run all test cases or individual test within visual studio using Test Explore.
-8.png 
+![alt text](ScreenShots/8.png "") 
 
 In the preceding example, my test result (actual) is match with expected result. In following example, my actual result is not match with expected result.
 ```
@@ -116,7 +116,7 @@ public void TestMethod2()
 }
 ```
 Result
-6.png
+![alt text](ScreenShots/6.PNG "") 
 
 To unit test every block of code, we require more test data. We can add more test method using TestMethod attribute, but it is very tedious job. The MSTest project is also support other attribute which enable us to write a suite for similar test. A DataTestMethod attributes represent a suite of tests which execute the same code with different input arguments. A DataRow attribute can be used for specifying the values for those inputs. Instead of creating new test, we can use these two attributes: DataTestMethod and DataRow to create a single data driven test.  
 ```
@@ -142,7 +142,7 @@ namespace TestProject1
 }
 ```
 Result
-7.png
+![alt text](ScreenShots/7.PNG "") 
 
 ### Unit test with ILogger 
 The .net core support built-in dependency injection. So whatever the services, we want to use during the execution of the code are injected as dependency. One of the best example is ILogger service. Using following code, we can configure ILogger service in our asp.net core project.
@@ -221,4 +221,4 @@ public void TestMethod4()
 ```
 
 ### Summary
-Unit test is a code that helps us in verifying the expected behavior of the other code in isolation. Here “In isolation" means there is no dependency between the tests. This is a better idea to test the Application code, before it goes for quality assurance (QA). 
+Unit test is a code that helps us in verifying the expected behavior of the other code in isolation. Here â€œIn isolation" means there is no dependency between the tests. This is a better idea to test the Application code, before it goes for quality assurance (QA). 
