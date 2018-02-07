@@ -224,11 +224,4 @@ public void Test4()
 ```
 
 ### Summary
-Unit test is a code that helps us in verifying the expected behavior of the other code in isolation. Here “In isolation" means there is no dependency between the tests. This is a better idea to test the Application code, before it goes for quality assurance (QA). All Unit test frameworks, MSTest, XUnit and NUnit, offer a similar end goal and help us to write unit test simpler, easier and faster.
-
-
-https://raygun.com/blog/unit-testing-frameworks-c/
-http://asp.net-hacker.rocks/2017/03/31/unit-testing-with-dotnetcore.html
-http://binary-notes.ru/choosing-of-the-unit-testing-framework/
-https://stackoverflow.com/questions/38063903/vs-2013-mstest-vs-nunit-vs-xunit
-https://cmatskas.com/unit-testing-with-net-core/
+Unit test is a code that helps us in verifying the expected behavior of the other code in isolation. Here â€œIn isolation" means there is no dependency between the tests. This is a better idea to test the Application code, before it goes for quality assurance (QA). All Unit test frameworks, MSTest, XUnit and NUnit, offer a similar end goal and help us to write unit test simpler, easier and faster.
