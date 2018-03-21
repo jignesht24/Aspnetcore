@@ -1,0 +1,12 @@
+D:\Serilog Example\SerilogDemoUsingMSSQL\bin\Debug\netcoreapp2.0\SerilogDemo.deps.json
+D:\Serilog Example\SerilogDemoUsingMSSQL\bin\Debug\netcoreapp2.0\SerilogDemo.runtimeconfig.json
+D:\Serilog Example\SerilogDemoUsingMSSQL\bin\Debug\netcoreapp2.0\SerilogDemo.runtimeconfig.dev.json
+D:\Serilog Example\SerilogDemoUsingMSSQL\bin\Debug\netcoreapp2.0\SerilogDemo.dll
+D:\Serilog Example\SerilogDemoUsingMSSQL\bin\Debug\netcoreapp2.0\SerilogDemo.pdb
+D:\Serilog Example\SerilogDemoUsingMSSQL\obj\Debug\netcoreapp2.0\SerilogDemo.csprojResolveAssemblyReference.cache
+D:\Serilog Example\SerilogDemoUsingMSSQL\obj\Debug\netcoreapp2.0\SerilogDemo.csproj.CoreCompileInputs.cache
+D:\Serilog Example\SerilogDemoUsingMSSQL\obj\Debug\netcoreapp2.0\SerilogDemo.AssemblyInfoInputs.cache
+D:\Serilog Example\SerilogDemoUsingMSSQL\obj\Debug\netcoreapp2.0\SerilogDemo.AssemblyInfo.cs
+D:\Serilog Example\SerilogDemoUsingMSSQL\obj\Debug\netcoreapp2.0\SerilogDemo.dll
+D:\Serilog Example\SerilogDemoUsingMSSQL\obj\Debug\netcoreapp2.0\SerilogDemo.pdb
+D:\Serilog Example\SerilogDemoUsingMSSQL\bin\Debug\netcoreapp2.0\appsettings.json
