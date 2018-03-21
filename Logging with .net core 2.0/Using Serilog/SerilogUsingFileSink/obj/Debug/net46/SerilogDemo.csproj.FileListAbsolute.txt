@@ -1,0 +1,4 @@
+D:\Serilog Example\SerilogDemoUsingFile\obj\Debug\net46\SerilogDemo.csprojResolveAssemblyReference.cache
+D:\Serilog Example\SerilogDemoUsingFile\obj\Debug\net46\SerilogDemo.csproj.CoreCompileInputs.cache
+D:\Serilog Example\SerilogDemoUsingFile\obj\Debug\net46\SerilogDemo.AssemblyInfoInputs.cache
+D:\Serilog Example\SerilogDemoUsingFile\obj\Debug\net46\SerilogDemo.AssemblyInfo.cs

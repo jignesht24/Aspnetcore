@@ -1,0 +1,40 @@
+21-Mar-2018 09:28:47.139 +05:30 [INF] User profile is available. Using 'C:\Users\jigtrive\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+21-Mar-2018 09:28:48.290 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/  
+21-Mar-2018 09:28:48.519 +05:30 [INF] Executing action method SerilogDemo.Controllers.HomeController.Index (SerilogDemo) with arguments (null) - ModelState is "Valid"
+21-Mar-2018 09:28:48.525 +05:30 [INF] Index method called!!!
+21-Mar-2018 09:28:51.458 +05:30 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+21-Mar-2018 09:28:51.775 +05:30 [INF] Executed action SerilogDemo.Controllers.HomeController.Index (SerilogDemo) in 3263.2762000000002ms
+21-Mar-2018 09:28:51.798 +05:30 [INF] Request finished in 3514.0818ms 200 text/html; charset=utf-8
+21-Mar-2018 09:28:51.900 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/lib/bootstrap/dist/css/bootstrap.min.css  
+21-Mar-2018 09:28:51.904 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/css/site.min.css  
+21-Mar-2018 09:28:51.904 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/images/banner3.svg  
+21-Mar-2018 09:28:51.905 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/images/banner1.svg  
+21-Mar-2018 09:28:51.906 +05:30 [INF] Sending file. Request path: '/images/banner1.svg'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\images\banner1.svg'
+21-Mar-2018 09:28:51.906 +05:30 [INF] Sending file. Request path: '/images/banner3.svg'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\images\banner3.svg'
+21-Mar-2018 09:28:51.906 +05:30 [INF] Sending file. Request path: '/css/site.min.css'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\css\site.min.css'
+21-Mar-2018 09:28:51.906 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+21-Mar-2018 09:28:51.920 +05:30 [INF] Request finished in 16.2867ms 200 image/svg+xml
+21-Mar-2018 09:28:51.920 +05:30 [INF] Request finished in 16.4275ms 200 text/css
+21-Mar-2018 09:28:51.923 +05:30 [INF] Request finished in 17.5873ms 200 image/svg+xml
+21-Mar-2018 09:28:51.936 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/images/banner2.svg  
+21-Mar-2018 09:28:51.936 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/lib/jquery/dist/jquery.min.js  
+21-Mar-2018 09:28:51.936 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/images/banner4.svg  
+21-Mar-2018 09:28:51.937 +05:30 [INF] Sending file. Request path: '/images/banner2.svg'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\images\banner2.svg'
+21-Mar-2018 09:28:51.937 +05:30 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\lib\jquery\dist\jquery.min.js'
+21-Mar-2018 09:28:51.937 +05:30 [INF] Sending file. Request path: '/images/banner4.svg'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\images\banner4.svg'
+21-Mar-2018 09:28:51.942 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/js/site.min.js?v=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU  
+21-Mar-2018 09:28:51.942 +05:30 [INF] Request finished in 6.2121ms 200 image/svg+xml
+21-Mar-2018 09:28:51.942 +05:30 [INF] Sending file. Request path: '/js/site.min.js'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\js\site.min.js'
+21-Mar-2018 09:28:51.945 +05:30 [INF] Request finished in 8.7885ms 200 image/svg+xml
+21-Mar-2018 09:28:51.946 +05:30 [INF] Request finished in 4.4726ms 200 application/javascript
+21-Mar-2018 09:28:51.955 +05:30 [INF] Request finished in 55.5549ms 200 text/css
+21-Mar-2018 09:28:51.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/lib/bootstrap/dist/js/bootstrap.min.js  
+21-Mar-2018 09:28:51.957 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.min.js'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js'
+21-Mar-2018 09:28:51.974 +05:30 [INF] Request finished in 17.6078ms 200 application/javascript
+21-Mar-2018 09:28:51.988 +05:30 [INF] Request finished in 51.1446ms 200 application/javascript
+21-Mar-2018 09:28:52.135 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?  
+21-Mar-2018 09:28:52.135 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot'
+21-Mar-2018 09:28:52.137 +05:30 [INF] Request finished in 2.1329ms 200 application/vnd.ms-fontobject
+21-Mar-2018 09:28:52.303 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:52344/favicon.ico  
+21-Mar-2018 09:28:52.303 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\Serilog Example\SerilogDemoUsingFile\wwwroot\favicon.ico'
+21-Mar-2018 09:28:52.307 +05:30 [INF] Request finished in 3.7641ms 200 image/x-icon
