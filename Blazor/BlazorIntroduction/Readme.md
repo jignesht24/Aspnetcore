@@ -25,9 +25,9 @@ A component model for building composable UI
 * Publishing and app size trimming
 
 Currently, Blazor is an experimental project and yet not committed to production. Following are some prerequisites that required to getting start with Blazor.
-.net Core Framework version: [.NET Core 2.1 Preview 1 SDK] (https://www.microsoft.com/net/download/dotnet-core/sdk-2.1.300-preview2)
-latest preview of [Visual Studio 2017 (15.7)] (https://www.visualstudio.com/vs/preview)
-Install Project templates and tooling for [Blazor] (https://marketplace.visualstudio.com/items?itemName=aspnet.blazor). Either we can install Blazor templates using command-line
+.net Core Framework version: [.NET Core 2.1 Preview 1 SDK](https://www.microsoft.com/net/download/dotnet-core/sdk-2.1.300-preview2)
+latest preview of [Visual Studio 2017 (15.7)](https://www.visualstudio.com/vs/preview)
+Install Project templates and tooling for [Blazor](https://marketplace.visualstudio.com/items?itemName=aspnet.blazor). Either we can install Blazor templates using command-line
 
 ```
 dotnet new -i Microsoft.AspNetCore.Blazor.Templates
@@ -54,9 +54,9 @@ Before run the application, make sure the correct sdk version supplied in projec
 Output
 ![alt text](img/4.png "")
 
-The above output image illustrates the boot process of a Blazor application in Chrome browser. It include Blazor' Javascript (blazor.js), Mono’s JavaScript library (mono.js) to bootstrap the Mono runtime (mono.wasm) in WebAssembly, application dll (testApp.dll) and .net framework dlls.
+The above output image illustrates the boot process of a Blazor application in Chrome browser. It include Blazor' Javascript (blazor.js), Monoâ€™s JavaScript library (mono.js) to bootstrap the Mono runtime (mono.wasm) in WebAssembly, application dll (testApp.dll) and .net framework dlls.
 
-Blazor is not a new Silverlight but there is difference, it does not require a any plugin. It uses Mono's IL linker to reduce the size of your application. As describe earlier WebAssembly is supported by most of the latest browser. Please refer following image to know more about the browser supports. I have taken this reference from [here] (https://developer.mozilla.org/en-US/docs/WebAssembly)
+Blazor is not a new Silverlight but there is difference, it does not require a any plugin. It uses Mono's IL linker to reduce the size of your application. As describe earlier WebAssembly is supported by most of the latest browser. Please refer following image to know more about the browser supports. I have taken this reference from [here](https://developer.mozilla.org/en-US/docs/WebAssembly)
 
 ![alt text](img/5.png "")
 
