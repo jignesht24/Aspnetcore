@@ -25,9 +25,9 @@ A component model for building composable UI
 * Publishing and app size trimming
 
 Currently, Blazor is an experimental project and yet not committed to production. Following are some prerequisites that required to getting start with Blazor.
-.net Core Framework version: [.NET Core 2.1 Preview 1 SDK](https://www.microsoft.com/net/download/dotnet-core/sdk-2.1.300-preview2)
-latest preview of [Visual Studio 2017 (15.7)](https://www.visualstudio.com/vs/preview)
-Install Project templates and tooling for [Blazor](https://marketplace.visualstudio.com/items?itemName=aspnet.blazor). Either we can install Blazor templates using command-line
+* .net Core Framework version: [.NET Core 2.1 Preview 1 SDK](https://www.microsoft.com/net/download/dotnet-core/sdk-2.1.300-preview2)
+* latest preview of [Visual Studio 2017 (15.7)](https://www.visualstudio.com/vs/preview)
+* Install Project templates and tooling for [Blazor](https://marketplace.visualstudio.com/items?itemName=aspnet.blazor). Either we can install Blazor templates using command-line
 
 ```
 dotnet new -i Microsoft.AspNetCore.Blazor.Templates
