@@ -1,7 +1,7 @@
 ### Introduction
 The Blazor is .net web framework which can run in any browser. We can create Blazor application using C#/Razor and HTML. The Blazor application runs in the browser on a real.NET runtime (Mono) via WebAssembly. It enables full stack web development with consistency, stability and  productivity of .NET. Normally, it works with latest browser that support WebAssembly and it works in older browser by falling back to asm.js based .net runtime.
 
-In my [previous article] (https://github.com/jignesht24/Aspnetcore/tree/master/Blazor/BlazorIntroduction), I have explain about the Blazor (what is Blazor) and prerequisites that are required to get started with Blazor. In this article, I will explain about the Data Binding with Blazor.
+In my [previous article](https://github.com/jignesht24/Aspnetcore/tree/master/Blazor/BlazorIntroduction), I have explain about the Blazor (what is Blazor) and prerequisites that are required to get started with Blazor. In this article, I will explain about the Data Binding with Blazor.
 
 Note: it is an experimental .NET web framework project, so many changes are going on. As a result, some portion of this article may become invalid in the future.
 
@@ -26,6 +26,7 @@ One-way data binding is also known as interpolation in other framework such as A
  }
 ```
 Output:
+
 ![alt text](img/1.png "")
 
 ### Two-way Data Binding
@@ -58,6 +59,7 @@ Output:
 }
 ```
 Output:
+
 ![alt text](img/2.png "")
 
 ### Event Binding
@@ -82,6 +84,7 @@ In following Example, I have bind click event with button.
 }
 ```
 Output
+
 ![alt text](img/4.png "")
 
 We can also handle child component event into parent component. It can offer the callback that parent component can use to react on event. Following example I have created child component with button and handle child component button event to parent component on OnSomeEvent. 
@@ -116,6 +119,7 @@ ParentCompoent
 }
 ```
 Output
+
 ![alt text](img/5.png "")
 
 ### Manually Trigger UI Refresh
@@ -153,6 +157,7 @@ Example
 } 
 ```
 Output
+
 ![alt text](img/3.png "")
 
 ### Summary
