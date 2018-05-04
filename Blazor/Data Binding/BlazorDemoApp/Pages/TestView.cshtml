@@ -1,0 +1,82 @@
+﻿@page "/databindingExample"
+
+    @using System.Threading;
+
+    <h3>One-way Data Binding</h3>
+
+    <p>
+        @currentTask
+    </p>
+
+    <br />
+
+    <h3>Two-way Data Binding</h3>
+
+    Enter your name: <input type="text" bind=@Name /><br />
+    <br />
+    Have you try the Blazor? <input type="checkbox" bind="IsTry" /><br />
+    <br />
+    <br />
+
+    <p><b>Summary</b></p>
+    You have entered:@Name <br />
+    Try Blazor: @(IsTry ? "Yes" : "No")
+
+    <br />
+    <br />
+    <h3>Manually Trigger UI Refresh</h3>
+
+    Counter: @CurrentCount
+    <br />
+    <br />
+    <button onclick=@Countdown>Start Countdown</button>
+
+    <br />
+    <br />
+    <h3>Event Binding</h3>
+    <br />
+    <button onclick=@ButtonClicked>Event Binding Example</button>
+    <br />
+    <br />
+    <button onclick=@(() => Console.WriteLine("Inline:Button Clicked"))>Inline Event Binding</button>
+    <br />
+    <br />
+    <h3>Handle Child Component event in parent Component</h3>
+    <ChildComponent OnSomeEvent=@ChildEventClicked />
+
+
+    @functions {
+
+    string currentTask = "Test One-way Data Binding!";
+
+    public string Name { get; set; }
+    public bool IsTry { get; set; }
+    public int CurrentCount { get; set; } = 20;
+
+    void Countdown()
+    {
+        var timer = new Timer(TimeCallBack, null, 1000, 1000);
+
+    }
+
+    void TimeCallBack(object state)
+    {
+        if (CurrentCount > 0)
+        {
+            CurrentCount--;
+
+            // Note:following line is necessary because Blazor would not recognize the state change hence not refresh the UI
+            this.StateHasChanged();
+        }
+    }
+    void ButtonClicked()
+    {
+        Console.WriteLine("Button Clicked");
+
+    }
+
+    void ChildEventClicked()
+    {
+        Console.WriteLine("Child event clicked");
+    }
+}
