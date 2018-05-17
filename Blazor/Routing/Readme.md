@@ -5,7 +5,7 @@ A Route is a URL pattern and Routing is a pattern matching process that monitors
 Blazor provides client-side router. As compare with Angular router, it has some limited feature. The Microsoft.AspNetCore.Blazor.Routing.Router class provides Routing in Blazor. At the time of initialization, Blazor need assembly that contains the routing i.e. using following code, the router is configured in Blazor application. It is configured in App.cshtml file.
 ```
 <Router AppAssembly=typeof(Program).Assembly />
-
+```
 
 Internally, Blazor's router find all the classes that implement Microsoft.AspNetCore.Blazor.Components.IComponent interface in the specified in above code.
 
