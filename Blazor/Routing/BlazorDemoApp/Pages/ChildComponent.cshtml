@@ -1,0 +1,12 @@
+﻿<h4>This is Child Component</h4>
+<br />
+<button onclick=@OnClick>Click Me(child component)</button>
+
+@functions {
+    public Action OnSomeEvent { get; set; }
+
+    private void OnClick()
+    {
+        OnSomeEvent?.Invoke();
+    }
+}

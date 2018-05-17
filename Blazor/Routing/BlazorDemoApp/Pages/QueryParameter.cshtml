@@ -1,0 +1,38 @@
+﻿@page "/accessQueryParameter"
+@using Microsoft.AspNetCore.Blazor.Services;
+
+@inject IUriHelper UriHelper
+
+<h3>Accessing Query Parameter</h3>
+
+<p>
+    Parameter Value: @Name
+</p>
+
+
+@functions {
+
+
+   private string Name { get; set; }
+
+    protected override void OnInit()
+    {
+        GetName();
+        UriHelper.OnLocationChanged += OnLocationChanges;
+    }
+
+    private void OnLocationChanges(object sender, string location) => GetName();
+
+    private void GetName()
+    {
+        var uri = new Uri(UriHelper.GetAbsoluteUri());
+        Name = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query).TryGetValue("name", out var type) ? type.First() : "";
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        UriHelper.OnLocationChanged -= OnLocationChanges;
+    }
+}
+

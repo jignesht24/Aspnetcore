@@ -1,0 +1,32 @@
+﻿@page "/example/{Name}"
+@page "/constrains/{Parameter1:int}"
+@using Microsoft.AspNetCore.Blazor.Services;
+
+@inject IUriHelper UriHelper
+
+<h3>Routing Test</h3>
+
+<p>
+    Parameter Value: @Name
+</p>
+<p>
+    Links
+</p>
+
+<a href="/example1">Navigation Using Anchor tag</a><br /><br />
+<NavLink href="/example2">Navigation Using NavLink</NavLink><br /><br />
+
+<button onclick=@ButtonClicked>Programatically Change Routing</button>
+
+@functions {
+
+
+    public string Name { get; set; }
+
+    public int Parameter1 { get; set; }
+
+    void ButtonClicked()
+    {
+        UriHelper.NavigateTo("example3");
+    }
+}

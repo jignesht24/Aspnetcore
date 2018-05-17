@@ -1,0 +1,10 @@
+C:\Users\jigtrive\.nuget\packages\microsoft.aspnetcore.blazor\0.2.1\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.dll
+C:\Users\jigtrive\.nuget\packages\microsoft.aspnetcore.blazor.browser\0.2.1\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.Browser.dll
+C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.webutilities\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll
+C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.primitives\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll
+C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.net.http.headers\2.0.3\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll
+C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.buffers\4.4.0\lib\netstandard2.0\System.Buffers.dll
+C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.runtime.compilerservices.unsafe\4.4.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.text.encodings.web\4.4.0\lib\netstandard2.0\System.Text.Encodings.Web.dll
