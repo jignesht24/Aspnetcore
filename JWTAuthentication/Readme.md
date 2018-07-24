@@ -221,5 +221,3 @@ public ActionResult<IEnumerable<string>> Get()
 ```
 ### Summary 
 JWT is very famous in web development. It is an open standard which allows transmitting data between parties as a JSON object in a secure and compact way. In this article, we learn how to generate and use JWT with ASP.net core application.
-
-You can view or download the source code from the GitHub link here. ()
