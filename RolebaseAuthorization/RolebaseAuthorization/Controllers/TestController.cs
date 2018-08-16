@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
 namespace RolebaseAuthorization.Controllers
 {
-    
     public class TestController : Controller
     {
         [Authorize(Roles = "Admin")]
