@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "DIToView";
+}
+@inject DepedencyInjectionExample.Service.IHelloWorldService helloWorldService
+
+<h4>DI To View</h4>
+
+<h5>
+    @helloWorldService.SaysHello() Reader!!!
+</h5>
