@@ -125,7 +125,7 @@ namespace JWTAuthentication.Controllers
 
             //Validate the User Credentials
             //Demo Purpose, I have Passed HardCoded User Information
-            if (user.Username == "Jignesh")
+            if (login.Username == "Jignesh")
             {
                 user = new UserModel { Username = "Jignesh Trivedi", EmailAddress = "test.btest@gmail.com" };
             }
